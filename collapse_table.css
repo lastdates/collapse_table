@@ -1,0 +1,104 @@
+div.collapse_report {
+  margin-top: 40px;
+  text-align: right;
+}
+div.collapse_report .floatLeft {
+  float: left;
+}
+.collapse_report {
+  line-height: 1.4;
+  font-family: "Segoe UI", "Open Sans", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #012;
+}
+.collapse_report b {
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+  padding: 8px;
+}
+.collapse_report tr.list > td:first-child {
+  cursor: pointer;
+}
+.collapse_report tr.list > td:first-child:after {
+  content: "+";
+}
+.collapse_report tr.list.open > td:first-child:after {
+  content: "\2212";
+}
+.collapse_report tr.list.oppn > td:first-child {
+  cursor: default;
+}
+.collapse_report tr.list.oppn > td:first-child:after {
+  content: " ";
+}
+.collapse_report td {
+  border-top: 1px solid #eee;
+  vertical-align: top;
+  padding: 0 0 0 1px;
+  box-sizing: border-box;
+}
+.collapse_report h {
+  float: left;
+  padding-left: 10px;
+}
+.collapse_report v,
+.collapse_report w {
+  float: right;
+  padding-right: 6px;
+}
+.collapse_report v:before,
+.collapse_report w:before {
+  display: inline;
+  content: "\f156  ";
+  font-family: "FontAwesome";
+}
+.collapse_report w {
+  color: #822;
+}
+.collapse_report w:before {
+  content: "- \f156  ";
+}
+.collapse_report td:first-child {
+  background: #ddf;
+  width: 31px;
+  text-align: center;
+  padding: 0 3px 0 1px;
+}
+.collapse_report table {
+  display: none;
+  color: #777;
+  font-weight: normal;
+}
+.collapse_report table td:first-child {
+  background: #eee;
+}
+.collapse_report table td:last-child {
+  border-right: 6px solid #e7e7e7;
+  padding-right: 1px;
+}
+.collapse_report table table {
+  color: #999;
+}
+.collapse_report table table td:first-child {
+  background: #f6f6f6;
+}
+.collapse_report table table td:last-child {
+  border-right: 6px solid #f2f2f2;
+  padding-right: 1px;
+}
+.collapse_report .open > td > table,
+.collapse_report .oppn > td > table {
+  display: table;
+}

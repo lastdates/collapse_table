@@ -1,0 +1,82 @@
+<div id="r1"></div>
+<div id="r2"></div>
+
+<script src="jquery.js"></script>
+<script src="collapse_table.js"></script>
+<script>
+collapse_table([
+	["Net Sales","a",[
+		["Net Room Sale","a",[
+			["Room Sale Inc Com Exc Tax","a",[
+				["Room Sale Inc Com Inc Tax","a",5000],
+				["Tax on Room Sale","s",1000]
+			],"c"],
+			["Allowance on Room Sale","s",1000],
+			["Total Net Commissions","s",[
+				["Com To Pay Later","a",[
+					["Booking.com","a",1000]
+				],"c"],
+				["Com Paid (Exc Tax)","a",[
+					["MMT","a",1000],
+					["Goibibo","a",1000],
+					["Cleartrip","a",1000],
+					["Oyo","a",1000]
+				],"c"]
+			],"c"]
+		],"o"],
+		["Net Food Sale","a",[
+			["Food Sale Inc Taxes","a",5000],
+			["Taxes on Food","s",1000]
+		],"c"],
+		["Net Extra Charges","a",[
+			["Extra Charges Inc Tax","a",5000],
+			["Tax on Extra Charges","s",1000]
+		],"c"]
+	],"o"]
+],'r1','Revenue');
+
+collapse_table([
+	["Total Sales (Inc Tax / Commissions)","a",[
+		["Room","a",[
+			["Sale","a",1000],
+			["Taxes","a",1000],
+			["Commissions","a",1000]
+		],"c"],
+		["Food","a",[
+			["Sale","a",1000],
+			["Taxes","a",1000]
+		],"c"],
+		["Extra","a",[
+			["Sale","a",1000],
+			["Taxes","a",1000]
+		],"c"]
+	],"c"],
+	["Receipt","a",[
+		["Received","a",[
+			["Cash","a",[
+				["Received","a",1000],
+				["Refund","s",1000]
+			],"c"],
+			["CC","a",1000],
+			["Bank Transfer","a",[
+				["Received","a",1000],
+				["Refund","s",1000]
+			],"c"],
+			["Commissions Deducted","a",1000],
+			["From Advance","a",1000]
+		],"c"],
+		["Pending","a",[
+			["To City Ledger","a",1000],
+			["To Guest Ledger","a",1000],
+			["To E-wallets","a",1000]
+		],"c"],
+		["Other Receipts","s",[
+			["To Advance","a",1000],
+			["From City Ledger","a",1000],
+			["From Guest Ledger","a",1000],
+			["From E-wallets","a",1000]
+		],"c"]
+	],"c"],
+	["Excess","a",1000]
+],'r2','Collections');
+</script>
